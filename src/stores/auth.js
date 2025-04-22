@@ -75,17 +75,6 @@ export const useAuthStore = defineStore('auth', () => {
     localStorage.removeItem('token')
   }
 
-  // // Initialize the store by checking if we have a token
-  // const initialize = () => {
-  //   if (token.value) {
-  //     // You might want to add a token validation API call here
-  //     // For now, we'll just assume the token is valid
-  //   }
-  // }
-
-  // // Call initialize when the store is created
-  // initialize()
-
   return {
     // State
     user,

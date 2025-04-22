@@ -16,6 +16,7 @@ export const useUsersStore = defineStore('users', () => {
     } catch (err) {
       error.value = err.response?.data?.message || 'Failed to fetch users'
       console.error('Error fetching users:', err)
+      localStorage.removeItem('token')
     } finally {
       loading.value = false
     }

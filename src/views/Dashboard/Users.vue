@@ -59,8 +59,6 @@ import { onMounted } from 'vue'
 const usersStore = useUsersStore()
 
 onMounted(() => {
-  if (usersStore.users.length === 0) {
-    usersStore.fetchUsers()
-  }
+  usersStore.fetchUsers()
 })
 </script>

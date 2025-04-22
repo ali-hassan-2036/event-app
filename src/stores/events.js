@@ -21,6 +21,7 @@ export const useEventsStore = defineStore('events', () => {
     } catch (err) {
       console.error('Error fetching events:', err) // Debug log
       error.value = err.message || 'Failed to load events'
+      localStorage.removeItem('token')
     } finally {
       loading.value = false
       console.log('Loading complete') // Debug log
