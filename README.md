@@ -22,7 +22,7 @@ A Vue 3 application with authentication, event management, and user assignment f
 
 ### Installation
 
-- Clone the repo - `git clone https://github.com/kutia-software-company/vue3-starter`.
+- Clone the repo - `git clone https://github.com/AllyDar2036/event-app.git`.
 - Install project dependencies — `npm install`.
 - Create `.env` file - `cp .env.example .env`.
 - Launch the app — `npm run dev`, it will become available at [http://localhost:5173]
